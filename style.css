@@ -186,8 +186,7 @@ ul li p {
   .home_finace_posts .elementor-posts .elementor-post__badge {
     top: 110px !important;
   }
-
-  .reader-picks article {
+  .reader-picks article{
     gap: 10px;
   }
 }
