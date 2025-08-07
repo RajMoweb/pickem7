@@ -115,9 +115,9 @@ function fun_cat_lists() {
                         echo '<span class="featured-tag" style="position:absolute; bottom: 160px; left:20px; background:#fce96a; color:#000; padding:4px 10px; border-radius:5px; font-weight:bold;">' . esc_html($categories[0]->name) . '</span>';
                     }
 
-                    if (has_post_thumbnail($small_post)) {
-                        echo '<a href="' . get_permalink($small_post) . '">';
-                        echo '<img src="' . esc_url(get_the_post_thumbnail_url($small_post, 'full')) . '" alt="' . esc_attr(get_the_title($big_post)) . '" />';
+                    if (has_post_thumbnail($big_post)) {
+                        echo '<a href="' . get_permalink($big_post) . '">';
+                        echo '<img class="123" src="' . esc_url(get_the_post_thumbnail_url($big_post, 'full')) . '" alt="' . esc_attr(get_the_title($big_post)) . '" />';
                         echo '</a>';
                     }
                     echo '<p style="margin-top:10px;">' . get_the_date('', $big_post) . ' | ' . esc_html(get_the_author($big_post)) . '</p>';
@@ -170,8 +170,8 @@ function fun_cat_lists() {
                     if (!empty($categories)) {
                         echo '<span class="featured-tag" style="position:absolute; bottom: 160px; left:20px; background:#fce96a; color:#000; padding:4px 10px; border-radius:5px; font-weight:bold;">' . esc_html($categories[0]->name) . '</span>';
                     }
-                    if (has_post_thumbnail($small_post)) {
-                        echo '<img src="' . esc_url(get_the_post_thumbnail_url($small_post, 'full')) . '" alt="' . esc_attr(get_the_title($big_post)) . '" />';
+                    if (has_post_thumbnail($big_post)) {
+                        echo '<img class="901" src="' . esc_url(get_the_post_thumbnail_url($big_post, 'full')) . '" alt="' . esc_attr(get_the_title($big_post)) . '" />';
                     }
                     echo '<p style="margin-top:10px;">' . get_the_date('', $big_post) . '| ' . esc_html(get_the_author($big_post)) . '</p>';
                     echo '<h2><a href="' . get_permalink($big_post) . '">' . get_the_title($big_post) . '</a></h2>';
